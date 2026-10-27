@@ -8,6 +8,5 @@ Bản việt hóa của người hâm mộ cho Chaos Zero Nightmare bản PC (ST
 Tải gói ở mục **Releases**, cài theo [HUONG_DAN.txt](HUONG_DAN.txt) (cần Python 3.14+). **Gói chưa được thử cài trên máy sạch**: sao lưu, tự chịu rủi ro.
 
 ## Ghi công và lưu ý
-- Phần **cốt truyện** dựa trên bản dịch cộng đồng của dự án **doubleD1302/CZN-VH** và một bản patch cộng đồng khác; xin cảm ơn các tác giả. Hiện repo đó **chưa có giấy phép** nên kho này để **riêng tư**; chỉ công khai khi có sự đồng ý của họ.
 - Phần **chữ** do chủ repo dịch và đồng bộ thuật ngữ (nguyên tắc: Hán-Việt cho nhãn hệ thống, giữ tên riêng/tên lớp bằng tiếng Anh).
 - Đây là sản phẩm của người hâm mộ, **không liên kết** với Smilegate / STOVE. Gói thay các file dữ liệu của game, có thể vi phạm điều khoản dịch vụ: tự chịu rủi ro.
