@@ -1,6 +1,6 @@
 # Chaos Zero Nightmare Việt Hóa · bản chữ + cốt truyện (R:133)
 
-> **TẢI GÓI CÀI Ở ĐÂY:** [Releases → v133-chu-viet](https://github.com/phamminhhoangcv-cyber/Chaos-Zero-Nightmare-VH/releases/tag/v133-chu-viet), kéo xuống mục **Assets** rồi bấm vào tên file **.zip** (CZN_VietHoa_R133_Chu_CotTruyen.zip hoặc CZN_VietHoa_R133_ChiChu_CopyTay.zip).
+> **TẢI GÓI CÀI Ở ĐÂY:** [Releases → v133-chu-viet](https://github.com/phamminhhoangcv-cyber/Chaos-Zero-Nightmare-VH/releases/tag/v133-chu-viet), kéo xuống mục **Assets** rồi bấm vào tên file **.zip** (CZN-VH_R133_Cốt Truyện.zip hoặc CZN-VH_R133_Copy Tay.zip).
 > Nút **Code → Download ZIP** ở trang chính CHỈ tải mã nguồn của repo (README và hướng dẫn, không có file cài). Đừng dùng nút đó.
 
 Bản việt hóa của người hâm mộ cho Chaos Zero Nightmare bản PC (STOVE, server ASIA), build tài nguyên **R:133**. Phiên bản hiện tại: **v1**.
@@ -29,7 +29,7 @@ Chi tiết theo nhóm: xem mục **Releases** (ghi chú phát hành).
 | Cách làm | Sao chép 3 file bằng chuột | Bấm đôi `cai_dat.bat` |
 | Có chữ Việt | Có | Có |
 | Có cốt truyện Việt | Không | Có |
-| File tải | `CZN_VietHoa_R133_ChiChu_CopyTay.zip` | `CZN_VietHoa_R133_Chu_CotTruyen.zip` |
+| File tải | `CZN-VH_R133_Copy Tay.zip` | `CZN-VH_R133_Cốt Truyện.zip` |
 | Hướng dẫn | [Hướng dẫn copy tay.txt](Hướng%20dẫn%20copy%20tay.txt) | [Hướng dẫn.txt](Hướng%20dẫn.txt) |
 
 Vì sao cốt truyện không copy tay được: cốt truyện nằm rải trong 19 file dữ liệu rất lớn của game (hơn 4 GB); gói chỉ chứa các mảnh vá nhỏ, nên cần bộ cài (`cai_dat.bat`) để vá đúng vị trí. Bộ cài chỉ là script PowerShell có sẵn trong Windows, mở ra đọc được.
@@ -39,7 +39,7 @@ Vì sao cốt truyện không copy tay được: cốt truyện nằm rải tron
 
 1. **Kiểm tra game:** mở game tới màn hình "TOUCH TO START", nhìn góc dưới bên trái phải thấy `R:133`. Số khác thì chưa cài được.
 2. **Tắt hẳn game và STOVE** (bộ cài sẽ từ chối chạy nếu game còn mở).
-3. Tải `CZN_VietHoa_R133_Chu_CotTruyen.zip` ở mục **Releases**, bấm chuột phải → Extract All để giải nén.
+3. Tải `CZN-VH_R133_Cốt Truyện.zip` ở mục **Releases**, bấm chuột phải → Extract All để giải nén.
 4. **Cài:** bấm đôi `cai_dat.bat`. Nếu game không nằm ở `D:\Games\ChaosZeroNightmare`, **kéo thư mục game** (thư mục chứa `bin`) rồi **thả lên `cai_dat.bat`**.
 5. Chờ báo **XONG**, mở game, vào Cài đặt → Ngôn ngữ, chọn mục tên **"Tiếng Việt"**.
 

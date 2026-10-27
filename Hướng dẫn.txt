@@ -35,7 +35,7 @@ B1. Tắt HẲN game và STOVE.
     - Bộ cài sẽ từ chối chạy nếu game vẫn đang mở.
 
 B2. Tải và giải nén gói
-    - Tải file  CZN_VietHoa_R133_Chu_CotTruyen.zip  (ở mục Releases của trang này).
+    - Tải file  CZN-VH_R133_Cốt Truyện.zip  (ở mục Releases của trang này).
     - Bấm chuột phải vào file zip, chọn "Extract All..." (Giải nén tất cả) và giải nén ra một thư mục dễ tìm,
       ví dụ  Desktop\CZN_VietHoa  (đừng giải nén vào Program Files).
     - Mở thư mục vừa giải nén. Bạn sẽ thấy: cai_dat.bat, go_bo.bat, các thư mục tools, text_pack, story_pack và file này.
