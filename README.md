@@ -27,12 +27,12 @@ Chi tiết theo nhóm: xem mục **Releases** (ghi chú phát hành).
 | Có chữ Việt | Có | Có |
 | Có cốt truyện Việt | Không | Có |
 | File tải | `CZN_VietHoa_R133_ChiChu_CopyTay.zip` | `CZN_VietHoa_R133_Chu_CotTruyen.zip` |
-| Hướng dẫn | [HUONG_DAN_COPY_TAY.txt](HUONG_DAN_COPY_TAY.txt) | [HUONG_DAN.txt](HUONG_DAN.txt) |
+| Hướng dẫn | [Hướng dẫn copy tay.txt](Hướng%20dẫn%20copy%20tay.txt) | [Hướng dẫn.txt](Hướng%20dẫn.txt) |
 
 Vì sao cốt truyện không copy tay được: cốt truyện nằm rải trong 19 file dữ liệu rất lớn của game (hơn 4 GB); gói chỉ chứa các mảnh vá nhỏ, nên cần bộ cài (`cai_dat.bat`) để vá đúng vị trí. Bộ cài chỉ là script PowerShell có sẵn trong Windows, mở ra đọc được.
 
 ## Cách 2 — Chữ + cốt truyện (làm bằng chuột, không cần gõ lệnh, không cài thêm gì)
-**Hướng dẫn đầy đủ từng bước: [HUONG_DAN.txt](HUONG_DAN.txt).** Tóm tắt:
+**Hướng dẫn đầy đủ từng bước: [Hướng dẫn.txt](Hướng%20dẫn.txt).** Tóm tắt:
 
 1. **Kiểm tra game:** mở game tới màn hình "TOUCH TO START", nhìn góc dưới bên trái phải thấy `R:133`. Số khác thì chưa cài được.
 2. **Tắt hẳn game và STOVE** (bộ cài sẽ từ chối chạy nếu game còn mở).
@@ -41,7 +41,7 @@ Vì sao cốt truyện không copy tay được: cốt truyện nằm rải tron
 5. Chờ báo **XONG**, mở game, vào Cài đặt → Ngôn ngữ, chọn mục tên **"Tiếng Việt"**.
 
 **Gỡ:** tắt game, bấm đôi `go_bo.bat`. Bộ cài tự sao lưu 3 file gốc vào `backup_goc`, **đừng xoá** thư mục này.
-Gặp lỗi: xem mục "Khi gặp lỗi" trong [HUONG_DAN.txt](HUONG_DAN.txt).
+Gặp lỗi: xem mục "Khi gặp lỗi" trong [Hướng dẫn.txt](Hướng%20dẫn.txt).
 
 ## Kiểm tra gói
 - Gói cốt truyện khớp bảng dịch (69.287 dòng thay, 26 DB), hash và etag khớp manifest chữ; file zip kiểm tra sạch (SHA256 trong `SHA256SUMS.txt`).
