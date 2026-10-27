@@ -19,13 +19,18 @@ So với bản chữ đầu ngày 27/10: **sửa bản dịch 7.960 dòng**, th�
 
 Chi tiết theo nhóm: xem mục **Releases** (ghi chú phát hành).
 
-## Cài đặt
-Yêu cầu: Windows, **Python 3.14 trở lên**, game đang là **bản gốc build R:133** (dòng `cznlive:837 R:133` ở màn hình "TOUCH TO START").
-1. Tắt hẳn game và STOVE. Tải `CZN_VietHoa_R133_Chu_CotTruyen.zip` ở mục **Releases**, giải nén.
-2. Bấm đôi `cai_dat.bat` (game không ở `D:\Games\ChaosZeroNightmare` thì chạy `cai_dat.bat "đường dẫn thư mục game"`).
-3. Chờ báo XONG, mở game, chọn ngôn ngữ mục tên **"Tiếng Việt"**.
+## Cài đặt (làm bằng chuột, không cần dùng AI hay gõ lệnh)
+**Hướng dẫn đầy đủ từng bước: [HUONG_DAN.txt](HUONG_DAN.txt).** Tóm tắt:
 
-Gỡ: tắt game, bấm đôi `go_bo.bat`. Script tự sao lưu 3 file gốc vào `backup_goc`; **đừng xoá** thư mục này. Chi tiết: [HUONG_DAN.txt](HUONG_DAN.txt).
+1. **Kiểm tra game:** mở game tới màn hình "TOUCH TO START", nhìn góc dưới bên trái phải thấy `R:133`. Số khác thì chưa cài được.
+2. **Cài Python** (miễn phí) từ https://www.python.org/downloads/ , bản **3.14 trở lên**. Ở màn hình đầu **tích ô "Add python.exe to PATH"** rồi bấm "Install Now".
+3. **Tắt hẳn game và STOVE.**
+4. Tải `CZN_VietHoa_R133_Chu_CotTruyen.zip` ở mục **Releases**, bấm chuột phải → Extract All để giải nén.
+5. **Cài:** bấm đôi `cai_dat.bat`. Nếu game không nằm ở `D:\Games\ChaosZeroNightmare`, **kéo thư mục game** (thư mục chứa `bin`) rồi **thả lên `cai_dat.bat`**.
+6. Chờ báo **XONG**, mở game, vào Cài đặt → Ngôn ngữ, chọn mục tên **"Tiếng Việt"**.
+
+**Gỡ:** tắt game, bấm đôi `go_bo.bat`. Bộ cài tự sao lưu 3 file gốc vào `backup_goc`, **đừng xoá** thư mục này.
+Gặp lỗi: xem mục "Khi gặp lỗi" trong [HUONG_DAN.txt](HUONG_DAN.txt).
 
 ## Kiểm tra gói
 - Gói cốt truyện khớp bảng dịch (69.287 dòng thay, 26 DB), hash và etag khớp manifest chữ; file zip kiểm tra sạch (SHA256 trong `SHA256SUMS.txt`).

@@ -1,34 +1,109 @@
-CHAOS ZERO NIGHTMARE VIỆT HÓA — BẢN CHỮ + CỐT TRUYỆN (R:133)
-==============================================================
+CHAOS ZERO NIGHTMARE VIỆT HÓA — HƯỚNG DẪN CÀI ĐẶT (bản chữ + cốt truyện, R:133)
+================================================================================
 
-Gói này đổi chữ trong game (giao diện, thẻ bài, mô tả, tooltip) và cốt truyện/thoại sang tiếng Việt.
-KHÔNG có font Việt hóa. Dành cho game bản PC (STOVE), server ASIA, đúng build tài nguyên R:133.
-Gói CHƯA được thử cài trên máy sạch: tự chịu rủi ro, sao lưu trước.
+Hướng dẫn này làm hoàn toàn bằng chuột, từng bước một. Không cần biết lập trình, không cần dùng AI.
+Gói đổi chữ trong game (giao diện, thẻ bài, tooltip, lựa chọn...) và cốt truyện/thoại sang tiếng Việt.
+Gói KHÔNG có font Việt hóa. Chỉ dùng cho game bản PC (STOVE, server ASIA), đúng build R:133.
+Gói CHƯA được thử cài trên máy sạch: hãy làm đúng từng bước, và bạn tự chịu rủi ro khi dùng.
 
-YÊU CẦU
--------
-- Windows. Python 3.14 trở lên (https://www.python.org/downloads/), đã thêm vào PATH.
-- Game đang là BẢN GỐC build R:133 (không có bản việt hóa khác). Kiểm: tới màn hình "TOUCH TO START", nhìn góc dưới
-  bên trái có dòng  cznlive:837 R:133 ...  Nếu số khác R:133 thì KHÔNG cài.
-- Tắt hẳn game và STOVE trước khi cài.
 
-CÁCH CÀI
---------
-1. Giải nén gói ra một thư mục bất kỳ.
-2. Mở thư mục đó, bấm đôi cai_dat.bat. Nếu game không ở D:\Games\ChaosZeroNightmare thì mở Command Prompt và chạy:
-        cai_dat.bat "đường dẫn thư mục game"
-   (thư mục game là thư mục chứa  bin\appdata\cznlive\gameres)
-3. Chờ vài phút cho tới khi báo XONG. Mở game, vào Cài đặt ngôn ngữ, chọn mục tên "Tiếng Việt".
-   (Bản Việt nằm ở chỗ của ngôn ngữ English, nên chọn đúng mục có tên "Tiếng Việt".)
+PHẦN A — CHUẨN BỊ (làm một lần)
+-------------------------------
 
-Script tự sao lưu 3 file gốc vào thư mục backup_goc (cạnh cai_dat.bat). ĐỪNG xoá thư mục này.
+A1. Kiểm tra game có đúng phiên bản (R:133) hay không
+    - Mở game, chờ tới màn hình có chữ "TOUCH TO START".
+    - Nhìn góc DƯỚI BÊN TRÁI có một dòng chữ nhỏ, dạng:   cznlive:837 R:133 ...
+    - Nếu thấy R:133 thì tiếp tục. Nếu thấy số khác (ví dụ R:140) thì DỪNG: game đã cập nhật, gói này không còn dùng được.
+    - Game phải là BẢN GỐC (chưa cài bản việt hóa nào khác).
 
-CÁCH GỠ
--------
-Tắt hẳn game, bấm đôi go_bo.bat. Game về bản gốc.
+A2. Cài Python (chương trình để chạy bộ cài, miễn phí)
+    - Mở trình duyệt, vào:  https://www.python.org/downloads/
+    - Bấm nút tải bản mới nhất (số bắt đầu bằng 3.14 hoặc lớn hơn, ví dụ 3.14.x).
+    - Mở file vừa tải. Ở màn hình đầu tiên:
+        * TÍCH VÀO ô "Add python.exe to PATH" (ở dưới cùng, RẤT QUAN TRỌNG),
+        * rồi bấm "Install Now".
+    - Chờ xong, bấm Close.
+    - (Kiểm tra, không bắt buộc) Bấm nút Start, gõ  cmd  rồi Enter, trong cửa sổ đen gõ  python --version  rồi Enter.
+      Thấy "Python 3.14..." (hoặc cao hơn) là đạt. Nếu báo không tìm thấy lệnh: cài lại Python và nhớ tích ô "Add python.exe to PATH".
 
-LƯU Ý
------
-- Đừng bấm "Repair Resources" trong game sau khi cài: nút này tải lại file gốc và xoá bản việt hóa.
-- STOVE tự cập nhật game bất cứ lúc nào; khi game lên build khác (R khác 133) gói này không còn dùng được.
-- Nếu cai_dat.bat báo lỗi, chạy go_bo.bat để về bản gốc rồi báo lại.
+A3. Tìm thư mục game
+    - Trên màn hình nền, bấm CHUỘT PHẢI vào biểu tượng game "Chaos Zero Nightmare", chọn "Mở vị trí tệp" (Open file location).
+      Nếu không có biểu tượng: trong STOVE, bấm vào game, chọn mục mở thư mục cài đặt.
+    - Thư mục game là thư mục CHỨA thư mục con tên  bin  (bên trong bin có appdata\cznlive\gameres).
+      Ví dụ:  D:\Games\ChaosZeroNightmare
+    - Nhớ vị trí thư mục này (nếu cần, bấm vào thanh địa chỉ phía trên để xem đường dẫn).
+
+
+PHẦN B — CÀI ĐẶT
+----------------
+
+B1. Tắt HẲN game và STOVE.
+    - Thoát game, thoát STOVE (bấm chuột phải biểu tượng STOVE ở góc dưới phải thanh tác vụ, chọn Thoát/Exit).
+    - Cho chắc: bấm Ctrl + Shift + Esc để mở Task Manager, tìm "ssr-stove-shield" hoặc "STOVE"; nếu còn thì chọn rồi bấm "Kết thúc tác vụ".
+    - Có thể khởi động lại máy cho chắc.
+
+B2. Tải và giải nén gói
+    - Tải file  CZN_VietHoa_R133_Chu_CotTruyen.zip  (ở mục Releases của trang này).
+    - Bấm chuột phải vào file zip, chọn "Extract All..." (Giải nén tất cả) và giải nén ra một thư mục dễ tìm,
+      ví dụ  Desktop\CZN_VietHoa  (đừng giải nén vào Program Files).
+    - Mở thư mục vừa giải nén. Bạn sẽ thấy: cai_dat.bat, go_bo.bat, các thư mục tools, text_pack, story_pack và file này.
+
+B3. Chạy bộ cài  (có hai cách, chọn một)
+
+    Cách 1 — Game nằm đúng ở  D:\Games\ChaosZeroNightmare :
+        Bấm ĐÔI vào  cai_dat.bat.
+
+    Cách 2 — Game nằm ở nơi khác (cách DỄ NHẤT, không phải gõ gì):
+        KÉO thư mục game (thư mục chứa  bin, tìm ở bước A3) rồi THẢ lên biểu tượng  cai_dat.bat.
+        (Bấm giữ chuột trái vào thư mục game, kéo sang cửa sổ có file cai_dat.bat, thả lên đúng file đó.)
+
+    Nếu Windows hiện cảnh báo xanh "Windows protected your PC":
+        bấm "More info" (Thông tin thêm) rồi "Run anyway" (Vẫn chạy). Đây là cảnh báo chung cho file chưa được ký của Microsoft.
+
+B4. Chờ cho tới khi cửa sổ đen báo  XONG  (mất vài phút, đừng đóng cửa sổ giữa chừng).
+    - Lần chạy đầu tiên, bộ cài tự SAO LƯU 3 file gốc của game vào thư mục  backup_goc  (nằm cạnh cai_dat.bat).
+      ĐỪNG XOÁ thư mục backup_goc: bạn cần nó để gỡ về sau.
+
+B5. Mở game (từ STOVE) và chọn ngôn ngữ
+    - Vào Cài đặt (biểu tượng bánh răng) → Ngôn ngữ, chọn mục có tên  "Tiếng Việt".
+      (Bản Việt nằm ở chỗ của ngôn ngữ English, nên hãy chọn đúng mục có tên "Tiếng Việt", không chọn "English".)
+
+
+PHẦN C — GỠ BẢN VIỆT HÓA
+------------------------
+
+    - Tắt hẳn game và STOVE (như bước B1).
+    - Mở thư mục đã giải nén, bấm ĐÔI vào  go_bo.bat  (hoặc kéo-thả thư mục game lên go_bo.bat nếu game không ở D:\Games\...).
+    - Chờ báo xong. Game trở về bản gốc.
+    - Thư mục backup_goc phải còn nguyên khi gỡ.
+
+
+KHI GẶP LỖI (cửa sổ đen có thể không có dấu tiếng Việt)
+---------------------------------------------------------
+
+  "Khong thay game o ..."
+      → Đường dẫn game sai. Dùng Cách 2 ở bước B3 (kéo-thả thư mục game lên cai_dat.bat).
+
+  "Hay TAT HAN game va STOVE roi chay lai."
+      → Game hoặc STOVE vẫn đang chạy. Làm lại bước B1 (kiểm tra bằng Task Manager), rồi chạy lại.
+
+  "Can Python 3.14 tro len"
+      → Chưa cài Python, hoặc cài bản cũ, hoặc quên tích "Add python.exe to PATH". Làm lại bước A2.
+
+  "CO LOI khi cai cot truyen"
+      → Bấm đôi go_bo.bat để trả game về bản gốc, rồi báo lỗi (chụp màn hình cửa sổ đen) cho người làm gói.
+
+  Vào game thấy toàn tiếng Anh
+      → Có thể bạn chưa chọn đúng mục "Tiếng Việt" trong Cài đặt → Ngôn ngữ; hoặc STOVE vừa cập nhật game và đè mất bản việt hóa
+        (xem lại A1: nếu R: đã khác 133 thì đợi bản mới); hoặc bạn đã bấm "Repair Resources" (xem lưu ý bên dưới).
+
+
+LƯU Ý QUAN TRỌNG
+----------------
+
+  • Đừng bấm nút "Repair Resources" trong game sau khi cài: nút này tải lại file gốc và xoá mất bản việt hóa.
+  • STOVE tự cập nhật game bất cứ lúc nào. Khi game lên build khác (R: khác 133), gói này không còn dùng được; hãy đợi bản mới.
+  • Gói chỉ thay các file dữ liệu CHỮ và CỐT TRUYỆN của game. Theo hiểu biết của người làm gói, tiến trình chơi của bạn
+    nằm trên máy chủ nên không bị ảnh hưởng, nhưng điều này chưa được kiểm chứng tuyệt đối.
+  • Việc can thiệp vào file game có thể vi phạm điều khoản dịch vụ của nhà phát hành: bạn tự chịu rủi ro.
+  • Đây là sản phẩm của người hâm mộ, không liên kết với Smilegate / STOVE.
