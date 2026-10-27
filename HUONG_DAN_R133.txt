@@ -1,0 +1,58 @@
+VIỆT HÓA CHAOS ZERO NIGHTMARE — BẢN CHỈ CÓ CHỮ
+================================================
+
+Gói này đổi toàn bộ chữ trong game (giao diện, thẻ bài, mô tả, tooltip) sang tiếng Việt.
+Gói KHÔNG có cốt truyện tiếng Việt và KHÔNG có font Việt hóa.
+Dành cho game bản PC (STOVE), server ASIA, đúng build tài nguyên R:133.
+
+
+1. KIỂM TRA TRƯỚC KHI CÀI
+-------------------------
+- Mở game tới màn hình "TOUCH TO START".
+- Nhìn góc dưới bên trái, có dòng dạng:  cznlive:837 R:133 ...
+- Phải đúng là R:133. Nếu là số khác, KHÔNG cài: game đã cập nhật và gói này không còn dùng được.
+- Game phải là bản gốc, chưa cài bản Việt hóa nào khác. Đang có bản khác thì gỡ về gốc trước.
+
+
+2. CÁCH CÀI
+-----------
+Bước 1. Tắt hẳn game và STOVE. Mở Task Manager, kiểm tra không còn tiến trình ssr-stove-shield.exe.
+
+Bước 2. Mở thư mục game, vào:
+            bin\appdata\cznlive\gameres
+
+Bước 3. SAO LƯU 3 file gốc ra một chỗ khác (rất quan trọng, để gỡ về sau):
+            gameres\manifest.ssra
+            gameres\manifest.ssra.etag
+            gameres\chunks\lang_en_b03_0.ssrc
+
+Bước 4. Giải nén gói này, copy 3 file dưới đây đè vào đúng vị trí (giữ nguyên tên thư mục "chunks"):
+            gameres\manifest.ssra
+            gameres\manifest.ssra.etag
+            gameres\chunks\lang_en_b03_0.ssrc
+
+Bước 5. Mở game, vào Cài đặt ngôn ngữ, chọn mục tên "Tiếng Việt".
+        (Bản Việt nằm ở chỗ của ngôn ngữ English, nên chọn đúng mục có tên "Tiếng Việt".)
+
+
+3. CÁCH GỠ
+----------
+Copy 3 file đã sao lưu ở Bước 3 đè lại vào đúng vị trí cũ. Game về bản gốc.
+
+
+4. NHỮNG ĐIỀU CẦN BIẾT
+----------------------
+- KHÔNG bấm "Sửa chữa file" / "Repair Resources" trong game hoặc STOVE: nó sẽ trả game về bản gốc
+  và mất bản Việt hóa.
+- Khi game tự cập nhật lên build mới, bản Việt hóa sẽ mất tác dụng. Đừng cài lại gói cũ lên
+  build mới vì có thể làm hỏng game; hãy đợi gói dịch mới.
+- Một số chữ cố ý giữ tiếng Anh: tên từ khoá trên thẻ bài, tooltip, tên hiệu ứng, loại thẻ.
+  Màn hình chờ ("TOUCH TO START", "Repair Resources") vẫn là tiếng Anh vì không sửa được.
+- Có thể còn vài chỗ dịch chưa tự nhiên hoặc hiển thị chưa đẹp.
+- Gói chỉ mới thử trên máy của người làm, chưa thử trên máy khác.
+
+
+5. RỦI RO
+---------
+Sửa file game có thể bị hệ thống chống gian lận hoặc nhà phát hành xử lý.
+Bạn tự chịu rủi ro; nếu lo ngại, hãy dùng tài khoản phụ. Không có gì bảo đảm về lâu dài.
