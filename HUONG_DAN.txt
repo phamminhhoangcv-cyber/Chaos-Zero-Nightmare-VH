@@ -1,0 +1,34 @@
+CHAOS ZERO NIGHTMARE VIỆT HÓA — BẢN CHỮ + CỐT TRUYỆN (R:133)
+==============================================================
+
+Gói này đổi chữ trong game (giao diện, thẻ bài, mô tả, tooltip) và cốt truyện/thoại sang tiếng Việt.
+KHÔNG có font Việt hóa. Dành cho game bản PC (STOVE), server ASIA, đúng build tài nguyên R:133.
+Gói CHƯA được thử cài trên máy sạch: tự chịu rủi ro, sao lưu trước.
+
+YÊU CẦU
+-------
+- Windows. Python 3.14 trở lên (https://www.python.org/downloads/), đã thêm vào PATH.
+- Game đang là BẢN GỐC build R:133 (không có bản việt hóa khác). Kiểm: tới màn hình "TOUCH TO START", nhìn góc dưới
+  bên trái có dòng  cznlive:837 R:133 ...  Nếu số khác R:133 thì KHÔNG cài.
+- Tắt hẳn game và STOVE trước khi cài.
+
+CÁCH CÀI
+--------
+1. Giải nén gói ra một thư mục bất kỳ.
+2. Mở thư mục đó, bấm đôi cai_dat.bat. Nếu game không ở D:\Games\ChaosZeroNightmare thì mở Command Prompt và chạy:
+        cai_dat.bat "đường dẫn thư mục game"
+   (thư mục game là thư mục chứa  bin\appdata\cznlive\gameres)
+3. Chờ vài phút cho tới khi báo XONG. Mở game, vào Cài đặt ngôn ngữ, chọn mục tên "Tiếng Việt".
+   (Bản Việt nằm ở chỗ của ngôn ngữ English, nên chọn đúng mục có tên "Tiếng Việt".)
+
+Script tự sao lưu 3 file gốc vào thư mục backup_goc (cạnh cai_dat.bat). ĐỪNG xoá thư mục này.
+
+CÁCH GỠ
+-------
+Tắt hẳn game, bấm đôi go_bo.bat. Game về bản gốc.
+
+LƯU Ý
+-----
+- Đừng bấm "Repair Resources" trong game sau khi cài: nút này tải lại file gốc và xoá bản việt hóa.
+- STOVE tự cập nhật game bất cứ lúc nào; khi game lên build khác (R khác 133) gói này không còn dùng được.
+- Nếu cai_dat.bat báo lỗi, chạy go_bo.bat để về bản gốc rồi báo lại.

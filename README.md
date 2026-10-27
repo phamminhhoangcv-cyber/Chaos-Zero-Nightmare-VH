@@ -1,12 +1,13 @@
-# Việt hóa Chaos Zero Nightmare — bản chỉ có chữ (R:133)
+# Chaos Zero Nightmare Việt Hóa — bản chữ + cốt truyện (R:133)
 
-Bản việt hóa **chữ** (giao diện, thẻ bài, mô tả, tooltip) cho Chaos Zero Nightmare bản PC (STOVE, server ASIA), build tài nguyên **R:133**.
+Bản việt hóa của người hâm mộ cho Chaos Zero Nightmare bản PC (STOVE, server ASIA), build tài nguyên **R:133**:
+- **Chữ**: giao diện, thẻ bài, mô tả, tooltip, lựa chọn Chaos, thành tựu…
+- **Cốt truyện và thoại** (qua công cụ `apply_story.py`).
+- **Không** có font Việt hóa trong gói này.
 
-- **Không** có cốt truyện tiếng Việt và **không** có font Việt hóa trong gói này.
-- Tải gói ở mục **Releases**: `CZN_VietHoa_ChuViet_R133.zip` (3 file thay vào game + `HUONG DAN.txt`).
-- Cách cài / gỡ: xem [HUONG_DAN_R133.txt](HUONG_DAN_R133.txt). Quan trọng: **sao lưu 3 file gốc trước khi cài**; game cập nhật lên build khác thì gói này không còn dùng được.
+Tải gói ở mục **Releases**, cài theo [HUONG_DAN.txt](HUONG_DAN.txt) (cần Python 3.14+). **Gói chưa được thử cài trên máy sạch**: sao lưu, tự chịu rủi ro.
 
-## Lưu ý
-- Đây là bản dịch của người hâm mộ, **không liên kết** với Smilegate / STOVE.
-- Gói thay một file dữ liệu chữ của game, tự chịu rủi ro khi dùng; không bấm "Repair Resources" sau khi cài (nút này tải lại file gốc và xoá bản việt hóa).
-- Bản dịch tuân theo nguyên tắc thuật ngữ nhất quán (Hán-Việt cho nhãn hệ thống, giữ tên riêng/tên lớp bằng tiếng Anh).
+## Ghi công và lưu ý
+- Phần **cốt truyện** dựa trên bản dịch cộng đồng của dự án **doubleD1302/CZN-VH** và một bản patch cộng đồng khác; xin cảm ơn các tác giả. Hiện repo đó **chưa có giấy phép** nên kho này để **riêng tư**; chỉ công khai khi có sự đồng ý của họ.
+- Phần **chữ** do chủ repo dịch và đồng bộ thuật ngữ (nguyên tắc: Hán-Việt cho nhãn hệ thống, giữ tên riêng/tên lớp bằng tiếng Anh).
+- Đây là sản phẩm của người hâm mộ, **không liên kết** với Smilegate / STOVE. Gói thay các file dữ liệu của game, có thể vi phạm điều khoản dịch vụ: tự chịu rủi ro.
