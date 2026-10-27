@@ -19,7 +19,19 @@ So với bản chữ đầu ngày 27/10: **sửa bản dịch 7.960 dòng**, th�
 
 Chi tiết theo nhóm: xem mục **Releases** (ghi chú phát hành).
 
-## Cài đặt (làm bằng chuột, không cần dùng AI hay gõ lệnh)
+## Chọn cách cài
+| | Cách 1 — Copy tay (chỉ chữ) | Cách 2 — Chữ + cốt truyện |
+|---|---|---|
+| Cần cài thêm | **Không cần gì** | Python 3.14+ (miễn phí) |
+| Cách làm | Sao chép 3 file bằng chuột | Bấm đôi `cai_dat.bat` |
+| Có chữ Việt | Có | Có |
+| Có cốt truyện Việt | Không | Có |
+| File tải | `CZN_VietHoa_R133_ChiChu_CopyTay.zip` | `CZN_VietHoa_R133_Chu_CotTruyen.zip` |
+| Hướng dẫn | [HUONG_DAN_COPY_TAY.txt](HUONG_DAN_COPY_TAY.txt) | [HUONG_DAN.txt](HUONG_DAN.txt) |
+
+Vì sao cốt truyện không copy tay được: cốt truyện nằm rải trong 19 file dữ liệu rất lớn của game (hơn 4 GB); gói chỉ chứa các mảnh vá nhỏ và cần chương trình nhỏ để vá đúng vị trí.
+
+## Cách 2 — Chữ + cốt truyện (làm bằng chuột, không cần gõ lệnh)
 **Hướng dẫn đầy đủ từng bước: [HUONG_DAN.txt](HUONG_DAN.txt).** Tóm tắt:
 
 1. **Kiểm tra game:** mở game tới màn hình "TOUCH TO START", nhìn góc dưới bên trái phải thấy `R:133`. Số khác thì chưa cài được.

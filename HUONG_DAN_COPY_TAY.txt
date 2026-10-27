@@ -1,0 +1,64 @@
+CHAOS ZERO NIGHTMARE VIỆT HÓA — BẢN CHỮ, CÀI BẰNG CÁCH COPY TAY (R:133)
+===============================================================================
+
+Cách này KHÔNG cần cài gì, KHÔNG cần Python, KHÔNG chạy chương trình nào. Chỉ sao chép 3 file bằng chuột.
+Gói đổi toàn bộ CHỮ trong game (giao diện, thẻ bài, tooltip, lựa chọn...) sang tiếng Việt.
+Gói KHÔNG có cốt truyện/thoại tiếng Việt và KHÔNG có font Việt hóa (muốn có cốt truyện thì dùng bản "Chữ + cốt truyện").
+Chỉ dùng cho game bản PC (STOVE, server ASIA), đúng build R:133. Gói chưa được thử cài trên máy sạch: bạn tự chịu rủi ro.
+
+
+BƯỚC 1 — KIỂM TRA GAME
+----------------------
+- Mở game tới màn hình có chữ "TOUCH TO START". Nhìn góc DƯỚI BÊN TRÁI, có dòng nhỏ:   cznlive:837 R:133 ...
+- Phải đúng là R:133. Số khác thì DỪNG (game đã cập nhật, gói này không còn dùng được).
+- Game phải là BẢN GỐC, chưa cài bản việt hóa nào khác.
+
+BƯỚC 2 — TẮT HẲN GAME VÀ STOVE
+------------------------------
+- Thoát game, thoát STOVE (chuột phải biểu tượng STOVE ở góc dưới phải thanh tác vụ → Thoát).
+- Cho chắc: bấm Ctrl + Shift + Esc mở Task Manager, nếu còn "ssr-stove-shield" hoặc "STOVE" thì chọn và bấm "Kết thúc tác vụ".
+
+BƯỚC 3 — TÌM THƯ MỤC "gameres" CỦA GAME
+---------------------------------------
+- Bấm chuột phải vào biểu tượng game → "Mở vị trí tệp" (Open file location), hoặc mở thư mục cài game của STOVE.
+- Đi vào các thư mục theo thứ tự:   bin  →  appdata  →  cznlive  →  gameres
+  Ví dụ đầy đủ:  D:\Games\ChaosZeroNightmare\bin\appdata\cznlive\gameres
+- Trong gameres bạn sẽ thấy 2 file  manifest.ssra  và  manifest.ssra.etag , và thư mục  chunks .
+  Trong chunks có file  lang_en_b03_0.ssrc .
+
+BƯỚC 4 — SAO LƯU 3 FILE GỐC (RẤT QUAN TRỌNG, để gỡ về sau)
+---------------------------------------------------------
+- Tạo một thư mục mới ở chỗ khác, ví dụ trên Desktop tên  Sao_luu_goc_CZN .
+- Sao chép (Ctrl+C rồi Ctrl+V sang thư mục sao lưu) đúng 3 file này từ game:
+      gameres\manifest.ssra
+      gameres\manifest.ssra.etag
+      gameres\chunks\lang_en_b03_0.ssrc
+- Đừng xoá thư mục sao lưu này.
+
+BƯỚC 5 — COPY 3 FILE VIỆT HÓA ĐÈ VÀO GAME
+-----------------------------------------
+- Bấm chuột phải file zip này → "Extract All..." (Giải nén tất cả). Bạn sẽ thấy thư mục  gameres  gồm đúng 3 file giống tên ở Bước 4.
+- Sao chép 3 file đó đè vào đúng chỗ trong game (giữ nguyên thư mục  chunks):
+      gameres\manifest.ssra               → vào  ...\gameres\
+      gameres\manifest.ssra.etag          → vào  ...\gameres\
+      gameres\chunks\lang_en_b03_0.ssrc   → vào  ...\gameres\chunks\
+- Khi Windows hỏi "Replace the files in the destination" (Thay thế), chọn "Replace the files in the destination".
+
+BƯỚC 6 — MỞ GAME VÀ CHỌN NGÔN NGỮ
+---------------------------------
+- Mở game (từ STOVE), vào Cài đặt (bánh răng) → Ngôn ngữ, chọn mục có tên  "Tiếng Việt".
+  (Bản Việt nằm ở chỗ của ngôn ngữ English, nên hãy chọn đúng mục có tên "Tiếng Việt".)
+
+
+GỠ BẢN VIỆT HÓA
+---------------
+- Tắt hẳn game và STOVE. Sao chép 3 file trong thư mục Sao_luu_goc_CZN đè lại vào đúng chỗ cũ (như Bước 5). Game về bản gốc.
+
+
+LƯU Ý
+-----
+- Đừng bấm "Repair Resources" trong game sau khi cài: nút này tải lại file gốc và xoá bản việt hóa.
+- STOVE tự cập nhật game bất cứ lúc nào. Khi game lên build khác (R: khác 133) gói này không còn dùng được; hãy đợi bản mới.
+- Cách này chỉ có CHỮ. Muốn có cả cốt truyện tiếng Việt, dùng gói "Chữ + cốt truyện" (cần một chương trình nhỏ để cài).
+- Việc sửa file game có thể vi phạm điều khoản dịch vụ của nhà phát hành: bạn tự chịu rủi ro.
+- Đây là sản phẩm của người hâm mộ, không liên kết với Smilegate / STOVE.
