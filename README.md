@@ -1,5 +1,8 @@
 # Chaos Zero Nightmare Việt Hóa · bản chữ + cốt truyện (R:133)
 
+> **TẢI GÓI CÀI Ở ĐÂY:** [Releases → v133-chu-viet](https://github.com/phamminhhoangcv-cyber/Chaos-Zero-Nightmare-VH/releases/tag/v133-chu-viet), kéo xuống mục **Assets** rồi bấm vào tên file .
+> Nút **Code → Download ZIP** ở trang chính CHỈ tải mã nguồn của repo (README và hướng dẫn, không có file cài). Đừng dùng nút đó.
+
 Bản việt hóa của người hâm mộ cho Chaos Zero Nightmare bản PC (STOVE, server ASIA), build tài nguyên **R:133**. Phiên bản hiện tại: **v1**.
 
 ## Gói gồm gì
