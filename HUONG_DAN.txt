@@ -1,10 +1,12 @@
 CHAOS ZERO NIGHTMARE VIỆT HÓA — HƯỚNG DẪN CÀI ĐẶT (bản chữ + cốt truyện, R:133)
 ================================================================================
 
-Hướng dẫn này làm hoàn toàn bằng chuột, từng bước một. Không cần biết lập trình, không cần dùng AI.
+Hướng dẫn này làm hoàn toàn bằng chuột, từng bước một. KHÔNG cần cài thêm phần mềm nào, không cần biết lập trình, không cần dùng AI.
+(Bộ cài dùng PowerShell có sẵn trong Windows.)
 Gói đổi chữ trong game (giao diện, thẻ bài, tooltip, lựa chọn...) và cốt truyện/thoại sang tiếng Việt.
 Gói KHÔNG có font Việt hóa. Chỉ dùng cho game bản PC (STOVE, server ASIA), đúng build R:133.
-Gói CHƯA được thử cài trên máy sạch: hãy làm đúng từng bước, và bạn tự chịu rủi ro khi dùng.
+Gói đã được thử trên một BẢN SAO của game gốc (cài, cài lại, gỡ đều đúng), nhưng CHƯA được thử trên máy người khác: hãy làm đúng từng bước,
+và bạn tự chịu rủi ro khi dùng.
 
 
 PHẦN A — CHUẨN BỊ (làm một lần)
@@ -14,19 +16,9 @@ A1. Kiểm tra game có đúng phiên bản (R:133) hay không
     - Mở game, chờ tới màn hình có chữ "TOUCH TO START".
     - Nhìn góc DƯỚI BÊN TRÁI có một dòng chữ nhỏ, dạng:   cznlive:837 R:133 ...
     - Nếu thấy R:133 thì tiếp tục. Nếu thấy số khác (ví dụ R:140) thì DỪNG: game đã cập nhật, gói này không còn dùng được.
-    - Game phải là BẢN GỐC (chưa cài bản việt hóa nào khác).
+    - Game phải là BẢN GỐC (chưa cài bản việt hóa nào khác). Bộ cài sẽ tự kiểm tra lại điều này và dừng nếu không đúng.
 
-A2. Cài Python (chương trình để chạy bộ cài, miễn phí)
-    - Mở trình duyệt, vào:  https://www.python.org/downloads/
-    - Bấm nút tải bản mới nhất (số bắt đầu bằng 3.14 hoặc lớn hơn, ví dụ 3.14.x).
-    - Mở file vừa tải. Ở màn hình đầu tiên:
-        * TÍCH VÀO ô "Add python.exe to PATH" (ở dưới cùng, RẤT QUAN TRỌNG),
-        * rồi bấm "Install Now".
-    - Chờ xong, bấm Close.
-    - (Kiểm tra, không bắt buộc) Bấm nút Start, gõ  cmd  rồi Enter, trong cửa sổ đen gõ  python --version  rồi Enter.
-      Thấy "Python 3.14..." (hoặc cao hơn) là đạt. Nếu báo không tìm thấy lệnh: cài lại Python và nhớ tích ô "Add python.exe to PATH".
-
-A3. Tìm thư mục game
+A2. Tìm thư mục game
     - Trên màn hình nền, bấm CHUỘT PHẢI vào biểu tượng game "Chaos Zero Nightmare", chọn "Mở vị trí tệp" (Open file location).
       Nếu không có biểu tượng: trong STOVE, bấm vào game, chọn mục mở thư mục cài đặt.
     - Thư mục game là thư mục CHỨA thư mục con tên  bin  (bên trong bin có appdata\cznlive\gameres).
@@ -40,7 +32,7 @@ PHẦN B — CÀI ĐẶT
 B1. Tắt HẲN game và STOVE.
     - Thoát game, thoát STOVE (bấm chuột phải biểu tượng STOVE ở góc dưới phải thanh tác vụ, chọn Thoát/Exit).
     - Cho chắc: bấm Ctrl + Shift + Esc để mở Task Manager, tìm "ssr-stove-shield" hoặc "STOVE"; nếu còn thì chọn rồi bấm "Kết thúc tác vụ".
-    - Có thể khởi động lại máy cho chắc.
+    - Bộ cài sẽ từ chối chạy nếu game vẫn đang mở.
 
 B2. Tải và giải nén gói
     - Tải file  CZN_VietHoa_R133_Chu_CotTruyen.zip  (ở mục Releases của trang này).
@@ -54,15 +46,17 @@ B3. Chạy bộ cài  (có hai cách, chọn một)
         Bấm ĐÔI vào  cai_dat.bat.
 
     Cách 2 — Game nằm ở nơi khác (cách DỄ NHẤT, không phải gõ gì):
-        KÉO thư mục game (thư mục chứa  bin, tìm ở bước A3) rồi THẢ lên biểu tượng  cai_dat.bat.
+        KÉO thư mục game (thư mục chứa  bin, tìm ở bước A2) rồi THẢ lên biểu tượng  cai_dat.bat.
         (Bấm giữ chuột trái vào thư mục game, kéo sang cửa sổ có file cai_dat.bat, thả lên đúng file đó.)
 
     Nếu Windows hiện cảnh báo xanh "Windows protected your PC":
         bấm "More info" (Thông tin thêm) rồi "Run anyway" (Vẫn chạy). Đây là cảnh báo chung cho file chưa được ký của Microsoft.
+        Nếu phần mềm diệt virus chặn file .bat/.ps1, hãy cho phép thư mục này (đây là script thật sự đọc/ghi file game).
 
-B4. Chờ cho tới khi cửa sổ đen báo  XONG  (mất vài phút, đừng đóng cửa sổ giữa chừng).
+B4. Chờ cho tới khi cửa sổ xanh/đen báo  XONG  (vài chục giây tới vài phút, đừng đóng cửa sổ giữa chừng).
     - Lần chạy đầu tiên, bộ cài tự SAO LƯU 3 file gốc của game vào thư mục  backup_goc  (nằm cạnh cai_dat.bat).
       ĐỪNG XOÁ thư mục backup_goc: bạn cần nó để gỡ về sau.
+    - Bộ cài kiểm tra từng mảnh dữ liệu trước khi ghi: nếu thấy dữ liệu game khác bản gốc R:133 thì DỪNG và chưa ghi gì.
 
 B5. Mở game (từ STOVE) và chọn ngôn ngữ
     - Vào Cài đặt (biểu tượng bánh răng) → Ngôn ngữ, chọn mục có tên  "Tiếng Việt".
@@ -74,12 +68,12 @@ PHẦN C — GỠ BẢN VIỆT HÓA
 
     - Tắt hẳn game và STOVE (như bước B1).
     - Mở thư mục đã giải nén, bấm ĐÔI vào  go_bo.bat  (hoặc kéo-thả thư mục game lên go_bo.bat nếu game không ở D:\Games\...).
-    - Chờ báo xong. Game trở về bản gốc.
+    - Chờ báo XONG. Game trở về bản gốc.
     - Thư mục backup_goc phải còn nguyên khi gỡ.
 
 
-KHI GẶP LỖI (cửa sổ đen có thể không có dấu tiếng Việt)
----------------------------------------------------------
+KHI GẶP LỖI (cửa sổ báo lỗi không có dấu tiếng Việt)
+-----------------------------------------------------
 
   "Khong thay game o ..."
       → Đường dẫn game sai. Dùng Cách 2 ở bước B3 (kéo-thả thư mục game lên cai_dat.bat).
@@ -87,11 +81,11 @@ KHI GẶP LỖI (cửa sổ đen có thể không có dấu tiếng Việt)
   "Hay TAT HAN game va STOVE roi chay lai."
       → Game hoặc STOVE vẫn đang chạy. Làm lại bước B1 (kiểm tra bằng Task Manager), rồi chạy lại.
 
-  "Can Python 3.14 tro len"
-      → Chưa cài Python, hoặc cài bản cũ, hoặc quên tích "Add python.exe to PATH". Làm lại bước A2.
+  "Game khong phai ban goc build R:133 ..."
+      → Game đã cập nhật lên build khác, hoặc đã cài một bản việt hóa khác. Gói này không dùng được cho trường hợp đó.
 
-  "CO LOI khi cai cot truyen"
-      → Bấm đôi go_bo.bat để trả game về bản gốc, rồi báo lỗi (chụp màn hình cửa sổ đen) cho người làm gói.
+  "Vung du lieu trong ... khong phai ban goc" / "... khong khop"
+      → Dữ liệu game khác với bản gốc R:133 (game vừa cập nhật hoặc đã bị sửa). Bộ cài đã dừng TRƯỚC khi ghi nên game chưa bị đổi.
 
   Vào game thấy toàn tiếng Anh
       → Có thể bạn chưa chọn đúng mục "Tiếng Việt" trong Cài đặt → Ngôn ngữ; hoặc STOVE vừa cập nhật game và đè mất bản việt hóa
